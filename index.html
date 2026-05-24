@@ -1,3 +1,20 @@
+<!--
+===========================================================
+★ カスタマイズはここだけ！★
+
+【申し込みボタンのリンクを変える方法】
+
+下の SESSION_URL の ' ' の中を、あなたの公式LINEのURLに書き換えてください。
+
+例）
+const SESSION_URL = 'https://lin.ee/あなたのURL';
+
+変更箇所は、このファイルを下にスクロールして
+「const SESSION_URL =」と書いてある行です。
+
+書き換えたら保存して、GitHubにアップすれば完了です！
+===========================================================
+-->
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -42,7 +59,7 @@
   .top-badge {
     background: linear-gradient(135deg, var(--blue), var(--blue2));
     color: #fff;
-    font-size: 11px;
+    font-size: 13px;
     letter-spacing: 3px;
     padding: 6px 20px;
     border-radius: 50px;
@@ -50,7 +67,7 @@
     display: inline-block;
   }
   .top-title {
-    font-size: 28px;
+    font-size: 32px;
     font-weight: bold;
     color: var(--dark);
     line-height: 1.5;
@@ -58,7 +75,7 @@
     margin-bottom: 10px;
   }
   .top-title span { color: var(--blue); }
-  .top-sub { font-size: 13px; color: var(--mid); letter-spacing: 2px; margin-bottom: 30px; }
+  .top-sub { font-size: 15px; color: var(--mid); letter-spacing: 2px; margin-bottom: 30px; }
   .top-card {
     background: var(--white);
     border: 1px solid var(--border);
@@ -69,7 +86,7 @@
     margin-bottom: 30px;
     text-align: left;
   }
-  .top-card p { font-size: 14px; color: var(--mid); line-height: 2.0; }
+  .top-card p { font-size: 16px; color: var(--mid); line-height: 2.0; }
   .top-info {
     display: flex;
     gap: 16px;
@@ -82,7 +99,7 @@
     border: 1px solid var(--border);
     border-radius: 50px;
     padding: 6px 18px;
-    font-size: 12px;
+    font-size: 14px;
     color: var(--blue);
     font-weight: bold;
   }
@@ -92,7 +109,7 @@
     border: none;
     border-radius: 50px;
     padding: 18px 60px;
-    font-size: 17px;
+    font-size: 19px;
     font-family: inherit;
     font-weight: bold;
     letter-spacing: 3px;
@@ -113,7 +130,7 @@
   .progress-info {
     display: flex;
     justify-content: space-between;
-    font-size: 11px;
+    font-size: 13px;
     color: var(--soft);
     margin-bottom: 8px;
     letter-spacing: 1px;
@@ -133,15 +150,15 @@
     margin: 0 auto;
     box-shadow: 0 4px 30px rgba(26,107,189,0.12);
   }
-  .q-num { font-size: 11px; color: var(--blue); letter-spacing: 3px; margin-bottom: 12px; font-weight: bold; }
-  .q-text { font-size: 17px; font-weight: bold; color: var(--dark); line-height: 1.7; margin-bottom: 24px; letter-spacing: 1px; }
+  .q-num { font-size: 13px; color: var(--blue); letter-spacing: 3px; margin-bottom: 12px; font-weight: bold; }
+  .q-text { font-size: 20px; font-weight: bold; color: var(--dark); line-height: 1.7; margin-bottom: 24px; letter-spacing: 1px; }
   .choices { display: flex; flex-direction: column; gap: 12px; }
   .choice-btn {
     background: var(--bg);
     border: 1.5px solid var(--border);
     border-radius: 12px;
-    padding: 14px 18px;
-    font-size: 14px;
+    padding: 16px 18px;
+    font-size: 16px;
     font-family: inherit;
     color: var(--dark);
     cursor: pointer;
@@ -152,7 +169,7 @@
   }
   .choice-btn:hover { border-color: var(--blue); background: #e8f0f8; transform: translateX(4px); }
   .choice-btn.selected { border-color: var(--blue); background: linear-gradient(135deg, #e8f0f8, #eaf4f8); color: var(--blue); font-weight: bold; }
-  .choice-label { font-size: 11px; color: var(--blue2); font-weight: bold; margin-right: 8px; }
+  .choice-label { font-size: 13px; color: var(--blue2); font-weight: bold; margin-right: 8px; }
 
   /* ===== RESULT ===== */
   .result-page {
@@ -163,8 +180,8 @@
   }
   .result-wrap { max-width: 560px; margin: 0 auto; }
   .result-header { text-align: center; margin-bottom: 24px; }
-  .result-deco { font-size: 11px; color: var(--blue); letter-spacing: 4px; margin-bottom: 8px; }
-  .result-header h2 { font-size: 15px; color: var(--mid); letter-spacing: 2px; margin-bottom: 6px; font-weight: normal; }
+  .result-deco { font-size: 13px; color: var(--blue); letter-spacing: 4px; margin-bottom: 8px; }
+  .result-header h2 { font-size: 17px; color: var(--mid); letter-spacing: 2px; margin-bottom: 6px; font-weight: normal; }
 
   .type-card {
     background: linear-gradient(135deg, var(--blue), var(--blue2));
@@ -174,9 +191,9 @@
     margin-bottom: 20px;
     color: #fff;
   }
-  .type-label { font-size: 12px; letter-spacing: 3px; opacity: 0.85; margin-bottom: 10px; }
-  .type-name { font-size: 26px; font-weight: bold; letter-spacing: 3px; margin-bottom: 8px; }
-  .type-sub { font-size: 13px; opacity: 0.85; letter-spacing: 1px; }
+  .type-label { font-size: 14px; letter-spacing: 3px; opacity: 0.85; margin-bottom: 10px; }
+  .type-name { font-size: 30px; font-weight: bold; letter-spacing: 3px; margin-bottom: 8px; }
+  .type-sub { font-size: 15px; opacity: 0.85; letter-spacing: 1px; }
 
   .result-block {
     background: var(--white);
@@ -187,13 +204,13 @@
     margin-bottom: 14px;
   }
   .result-block.gold { border-left-color: var(--gold); }
-  .rb-label { font-size: 10px; color: var(--blue); letter-spacing: 2px; font-weight: bold; margin-bottom: 8px; }
+  .rb-label { font-size: 12px; color: var(--blue); letter-spacing: 2px; font-weight: bold; margin-bottom: 8px; }
   .result-block.gold .rb-label { color: var(--gold); }
-  .rb-body { font-size: 14px; line-height: 2.0; color: var(--dark); white-space: pre-line; }
+  .rb-body { font-size: 16px; line-height: 2.0; color: var(--dark); white-space: pre-line; }
 
   .point-list { list-style: none; padding: 0; }
   .point-list li {
-    font-size: 14px;
+    font-size: 16px;
     color: var(--dark);
     line-height: 1.8;
     padding: 5px 0;
@@ -213,7 +230,7 @@
     margin: 24px 0;
   }
   .message-title {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     color: var(--blue);
     letter-spacing: 2px;
@@ -223,25 +240,14 @@
     border-bottom: 1px solid var(--border);
   }
   .message-body {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 2.2;
     color: var(--dark);
     margin-bottom: 16px;
   }
-  .message-highlight {
-    background: linear-gradient(135deg, var(--blue), var(--blue2));
-    color: #fff;
-    border-radius: 10px;
-    padding: 14px 18px;
-    font-size: 15px;
-    font-weight: bold;
-    text-align: center;
-    letter-spacing: 2px;
-    margin: 16px 0;
-  }
   .check-list { list-style: none; padding: 0; margin: 12px 0; }
   .check-list li {
-    font-size: 14px;
+    font-size: 16px;
     color: var(--dark);
     line-height: 1.9;
     padding: 4px 0;
@@ -255,7 +261,7 @@
     color: var(--dark);
     border-radius: 8px;
     padding: 10px 16px;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: bold;
     text-align: center;
     margin: 14px 0;
@@ -263,13 +269,19 @@
   }
 
   /* CTA */
+  @keyframes shimmer-ltr {
+    0%   { left: -60%; }
+    100% { left: 150%; }
+  }
   .cta-btn {
+    position: relative;
+    overflow: hidden;
     background: linear-gradient(135deg, var(--gold), var(--gold2));
     color: var(--dark);
     border: none;
     border-radius: 50px;
-    padding: 18px 40px;
-    font-size: 16px;
+    padding: 20px 40px;
+    font-size: 18px;
     font-family: inherit;
     font-weight: bold;
     letter-spacing: 2px;
@@ -280,8 +292,19 @@
     margin-bottom: 10px;
     transition: transform 0.2s;
   }
-  .cta-btn:hover { transform: translateY(-2px); }
-  .cta-note { font-size: 11px; color: var(--soft); text-align: center; margin-top: 6px; }
+  .cta-btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -60%;
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.18), transparent);
+    animation: shimmer-ltr 3s ease-in-out infinite;
+    border-radius: 50px;
+  }
+  .cta-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(201,149,108,0.7); }
+  .cta-note { font-size: 13px; color: var(--soft); text-align: center; margin-top: 6px; }
 
   .retry-btn {
     display: block;
@@ -309,7 +332,7 @@
     <p>「老後のお金、大丈夫かな…」<br>「何から始めればいいのかわからない」<br>「もっと自由な生き方がしたい」<br><br>16問に答えるだけで、あなたの<strong>お金タイプ</strong>と<br><strong>今必要なアクション</strong>がわかります。</p>
   </div>
   <div class="top-info">
-    <div class="top-info-item">📝 16問</div>
+    <div class="top-info-item">📝 15問</div>
     <div class="top-info-item">⏱ 約3分</div>
     <div class="top-info-item">🔍 8タイプ</div>
   </div>
@@ -372,7 +395,7 @@
       <div class="message-title">✦ あなたへのメッセージ ✦</div>
       <div class="message-body">今回の診断で見えたのは、<br>「今のあなたの現在地」です。<br><br>でも本当に大切なのは、<br>ここから、どんな未来を選んでいくかです。<br><br>同じタイプでも、<br>今の状況、家族構成、働き方、理想の暮らしなどによって、<br>必要なお金や選択肢は大きく変わります。</div>
 
-      <div class="message-highlight">「未来逆算マネーナビ個別セッション」</div>
+      <div class="message-body">診断だけでは見えない部分も多いため、<br>もし「自分の場合はどうなるのか」を整理したい場合は、<br><strong>【未来逆算マネーナビ個別セッション】</strong>にて<br>個別に一緒に未来設計を行うことができます。</div>
 
       <div class="message-body">このセッションでは、</div>
       <ul class="check-list">
@@ -420,14 +443,12 @@ const QUESTIONS = [
     choices: ['積極的にしている','したいが時間・お金の余裕がない','何をすべきかわからない','あまり必要性を感じていない'] },
   { text: '今から5年後、収入はどうなっていたいですか？',
     choices: ['今と同じくらい安定していればいい','今より少し増えていればいい','今の1.5〜2倍にしたい','仕組みで自動的に収入が入る状態にしたい'] },
-  { text: '今の生活の余裕はどのくらいありますか？',
+  { text: '今の生活にお金の余裕はどのくらいありますか？',
     choices: ['毎日いっぱいいっぱい','少し余裕がない','時々ゆとりがある','比較的自由に使える'] },
   { text: '自分の時間についてどのくらいありますか？',
     choices: ['ほとんど取れない','たまに取れる','意識して作っている','比較的自由に使える'] },
   { text: '将来のための毎月の貯金・投資はできていますか？',
-    choices: ['できていない','少額だけしている','計画的にできている','必要な分はすでに準備できている'] },
-  { text: 'お金の管理状況は？',
-    choices: ['あまり把握できていない','何となく把握している','しっかり把握している','将来まで設計している'] }
+    choices: ['できていない','少額だけしている','計画的にできている','必要な分はすでに準備できている'] }
 ];
 
 // [安心設計, 未来準備, 頑張り屋さん, なんとなく不安, 成長志向, 行動加速, 未来クリエイター, 自由設計]
@@ -446,8 +467,7 @@ const SCORES = [
   [[2,0,0,0,0,0,0,0],[0,2,0,0,0,0,0,0],[0,0,0,0,2,1,0,0],[0,0,0,0,0,0,2,2]],
   [[0,0,2,1,0,0,0,0],[0,0,1,1,0,0,0,0],[1,1,0,0,0,0,0,0],[0,0,0,0,0,0,1,2]],
   [[0,0,2,1,0,0,0,0],[0,1,1,0,0,0,0,0],[0,0,0,0,2,1,0,0],[0,0,0,0,0,0,0,2]],
-  [[0,0,1,2,0,0,0,0],[0,2,0,1,0,0,0,0],[2,0,0,0,0,1,0,0],[0,0,0,0,0,2,1,0]],
-  [[0,0,0,2,0,0,0,0],[0,1,0,1,0,0,0,0],[2,0,0,0,0,1,0,0],[0,0,0,0,0,1,2,0]]
+  [[0,0,1,2,0,0,0,0],[0,2,0,1,0,0,0,0],[2,0,0,0,0,1,0,0],[0,0,0,0,0,2,1,0]]
 ];
 
 const TYPES = [
@@ -525,7 +545,7 @@ const TYPES = [
   }
 ];
 
-const TOTAL = 16;
+const TOTAL = 15;
 let current = 0;
 let scores = [0,0,0,0,0,0,0,0];
 let answers = new Array(TOTAL).fill(-1);
@@ -543,7 +563,7 @@ function showQuestion(idx) {
   current = idx;
   const q = QUESTIONS[idx];
   const pct = Math.round((idx / TOTAL) * 100);
-  document.getElementById('progressText').textContent = `Q${idx+1} / ${TOTAL}`;
+  document.getElementById('progressText').textContent = `Q${idx+1} / 15`;
   document.getElementById('progressPct').textContent = pct + '%';
   document.getElementById('progressBar').style.width = pct + '%';
   document.getElementById('qNum').textContent = 'Q' + String(idx+1).padStart(2,'0');
